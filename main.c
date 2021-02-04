@@ -7,8 +7,10 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main() {
+    int x, y;
+    printf("수를 입력하세요\n");
+    scanf("%d %d",&x,&y);
+    printf("%d\n%d\n",x,y);
     return 0;
 }
