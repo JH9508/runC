@@ -9,20 +9,17 @@
 
 int add(int x, int y)
 {
-    int p = x+y;
-    return p;
+    return x+y;
 }
 
 int minus(int x,int y)
 {
-    int n = x-y;
-    return n;
+    return x-y;
 }
 
 int mul(int x,int y)
 {
-    int m = x*y;
-    return m;
+    return x*y;
 }
 
 int main() {
