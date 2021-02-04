@@ -7,31 +7,25 @@
 
 #include <stdio.h>
 
-int add(int x, int y)
-{
-    return x+y;
-}
 
-int minus(int x,int y)
-{
-    return x-y;
-}
-
-int mul(int x,int y)
-{
-    return x*y;
-}
+// Call By value
+// Call By Reference
+// n은 10까지 가능
 
 int main() {
-//    char o; // 기호 입력
-    int x, y; // 입력 받을 수
-    printf("수를 입력하세요\n");
-    scanf("%d%d",&x,&y);
+   // char o; // 기호 입력
+   // int x, y; // 입력 받을 수
+    int max, i;
+    int arr[10];
+    printf("사칙연산할 횟수를 입력하세요 최대 10개\n");
+    scanf("%d",&max);
+    max = max - 1;
+    for (i=0; i<max; i++) {
+        scanf("%d\n",&arr[i]);
+    }
     
-    printf("%d %d",add(x,y));
-    printf("\n");
-    printf("%d %d",minus(x,y));
-    printf("\n");
-    printf("%d %d",mul(x,y));
+    
+ 
+    
     return 0;
 }
