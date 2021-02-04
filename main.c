@@ -7,10 +7,20 @@
 
 #include <stdio.h>
 
+int add(int x, int y)
+{
+    int p = x+y;
+    return p;
+}
+
+
+
 int main() {
-    int x, y;
+//    char o; // 기호 입력
+    int x, y; // 입력 받을 수
     printf("수를 입력하세요\n");
-    scanf("%d %d",&x,&y);
-    printf("%d\n%d\n",x,y);
+    scanf("%d%d",&x,&y);
+    
+    printf("%d %d",add(x,y));
     return 0;
 }
