@@ -12,11 +12,18 @@ int add(int x, int y)
     int p = x+y;
     return p;
 }
-int minus(int x,int y){
+
+int minus(int x,int y)
+{
     int n = x-y;
     return n;
 }
 
+int mul(int x,int y)
+{
+    int m = x*y;
+    return m;
+}
 
 int main() {
 //    char o; // 기호 입력
@@ -27,5 +34,7 @@ int main() {
     printf("%d %d",add(x,y));
     printf("\n");
     printf("%d %d",minus(x,y));
+    printf("\n");
+    printf("%d %d",mul(x,y));
     return 0;
 }
