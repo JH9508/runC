@@ -12,7 +12,10 @@ int add(int x, int y)
     int p = x+y;
     return p;
 }
-
+int minus(int x,int y){
+    int n = x-y;
+    return n;
+}
 
 
 int main() {
@@ -22,5 +25,7 @@ int main() {
     scanf("%d%d",&x,&y);
     
     printf("%d %d",add(x,y));
+    printf("\n");
+    printf("%d %d",minus(x,y));
     return 0;
 }
