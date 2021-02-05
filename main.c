@@ -23,18 +23,39 @@ int add (int numBoxA, int x, int arr1[10], int maxN){
     
     return numBoxA;
 }
-int sub (int numBoxM, int c, int arr2[10], int maxN2){
+int sub (int numBoxS, int c, int arr2[10], int maxN2){
     
     
-    numBoxM = 0;
+    numBoxS = 0;
     
     for(c=0; c<maxN2; c++){
-        numBoxM -= arr2[c];
+        numBoxS -= arr2[c];
+    }
+    
+    return numBoxS;
+}
+int mul (int numBoxM, int m, int arr3[10], int maxN3){
+    
+    
+    numBoxM = 1;
+    
+    for(m=0; m<maxN3; m++){
+        numBoxM *= arr3[m];
     }
     
     return numBoxM;
 }
-
+int divf(int numBoxD, int d, int arr4[10], int maxN4){
+    
+    
+    numBoxD= arr4[0];
+    
+    for(d=1; d<maxN4; d++){
+        numBoxD /= arr4[d];
+    }
+    
+    return numBoxD;
+}
 
 
 int main() {
@@ -63,7 +84,12 @@ int main() {
     else if (o == '-'){
         printf("%d\n",sub(numBox, y, arr, max));
     }
-    
+    else if (o == '*'){
+        printf("%d\n",mul(numBox, y, arr, max));
+    }
+    else{
+        printf("%d\n",divf(numBox, y, arr, max));
+    }
     
     
     return 0;
