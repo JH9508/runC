@@ -12,17 +12,27 @@
 // Call By Reference
 // n은 10까지 가능
 
-int add ( int arr[10], int max){
+int add (int numBoxA, int x, int arr1[10], int maxN){
     
-    int result, x;
     
-    result = 0;
+    numBoxA = 0;
     
-    for(x=0; x<max; x++){
-        result += arr[x];
+    for(x=0; x<maxN; x++){
+        numBoxA += arr1[x];
     }
     
-    return result;
+    return numBoxA;
+}
+int sub (int numBoxM, int c, int arr2[10], int maxN2){
+    
+    
+    numBoxM = 0;
+    
+    for(c=0; c<maxN2; c++){
+        numBoxM -= arr2[c];
+    }
+    
+    return numBoxM;
 }
 
 
@@ -30,6 +40,8 @@ int add ( int arr[10], int max){
 int main() {
     char o; // 기호 입력
     int i, max;
+    int numBox = 0;
+    int y = 0;
     int arr[10]; // 최대 정수 개수
     
     printf("사칙연산할 개수를 입력하세요 최대 10개 \n");
@@ -46,7 +58,10 @@ int main() {
     printf("%c\n", o);
     
     if (o == '+') {
-        printf("%d\n",add(arr,max));
+        printf("%d\n",add(numBox, y, arr, max));
+    }
+    else if (o == '-'){
+        printf("%d\n",sub(numBox, y, arr, max));
     }
     
     
