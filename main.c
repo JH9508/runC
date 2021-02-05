@@ -45,12 +45,9 @@ int main() {
     scanf(" %c", &o);
     printf("%c\n", o);
     
-    switch (o) {
-        case '+' :
-            printf("%d\n",add(arr,max));
-            break;
+    if (o == '+') {
+        printf("%d\n",add(arr,max));
     }
-    
     
     
     
