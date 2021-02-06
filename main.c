@@ -26,9 +26,9 @@ int add (int numBoxA, int x, int arr1[10], int maxN){
 int sub (int numBoxS, int c, int arr2[10], int maxN2){
     
     
-    numBoxS = 0;
+    numBoxS = arr2[0];
     
-    for(c=0; c<maxN2; c++){
+    for(c=1; c<maxN2; c++){
         numBoxS -= arr2[c];
     }
     
@@ -37,9 +37,9 @@ int sub (int numBoxS, int c, int arr2[10], int maxN2){
 int mul (int numBoxM, int m, int arr3[10], int maxN3){
     
     
-    numBoxM = 1;
+    numBoxM = arr3[0];;
     
-    for(m=0; m<maxN3; m++){
+    for(m=1; m<maxN3; m++){
         numBoxM *= arr3[m];
     }
     
@@ -75,8 +75,12 @@ int main() {
     }
     
     printf(" +  -  *  / 중 1개의 기호를 입력해주세요\n");
+    
     scanf(" %c", &o);
-    printf("%c\n", o);
+    while (o != '+' && o != '-' && o != '*' && o != '/') {
+        printf("잘못 입력하셨습니다 + - * / 중 다시 입력하세요\n");
+        scanf(" %c", &o);
+    }
     
     if (o == '+') {
         printf("%d\n",add(numBox, y, arr, max));
