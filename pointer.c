@@ -1,41 +1,41 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-// x와 y를 바꾸고 싶은 함수
-void swap(int * x, int * y)
-{
-    int temp;
-    printf("%d %d\n", *x, *y);
-    temp = *x;
-    *x = *y;
-    *y = temp;
-
-}
-
-int main(void)
-{
-    int a = 5, b = 10;  // 4바이트 변수 두개
-    int * arr;
-    int n;
-    
-    scanf("%d", &n);            // 사용자가 입력받을 항 갯수 입력
-    
-    
-//    scanf("%d", &n);
-////    arr = malloc(sizeof(int) * n);
+//#include <stdio.h>
+//#include <stdlib.h>
 //
-//    for(int i=0;i<n;i++){
-//        arr[i] = i;
-//        printf("%d ", arr[i]);
-//    }
-    
-//    swap(&a, &b);     // Call by Reference (참조에 의한 호출)
-
-    // 기댓값 10 5
-    printf("Main : %d %d\n", a, b);
-    
-    return 0;
-}
+//// x와 y를 바꾸고 싶은 함수
+//void swap(int * x, int * y)
+//{
+//    int temp;
+//    printf("%d %d\n", *x, *y);
+//    temp = *x;
+//    *x = *y;
+//    *y = temp;
+//
+//}
+//
+//int main(void)
+//{
+//    int a = 5, b = 10;  // 4바이트 변수 두개
+////    int * arr;
+//    int n;
+//    
+//    scanf("%d", &n);            // 사용자가 입력받을 항 갯수 입력
+//    
+//    
+////    scanf("%d", &n);
+//////    arr = malloc(sizeof(int) * n);
+////
+////    for(int i=0;i<n;i++){
+////        arr[i] = i;
+////        printf("%d ", arr[i]);
+////    }
+////
+////    swap(&a, &b);     // Call by Reference (참조에 의한 호출)
+//
+//    // 기댓값 10 5
+//    printf("Main : %d %d\n", a, b);
+//    
+//    return 0;
+//}
 
 /*
  &a : a의 주소값에 접근
