@@ -12,7 +12,7 @@
 // Call By value
 // Call By Reference
 // n은 10까지 가능
-//
+
 int add (int *arr, int max){
 
 
