@@ -5,7 +5,7 @@
 //  Created by 김지훈 on 2021/02/09.
 //
 
-#include <stdio.h>
+//#include <stdio.h>
  
 //void swap(int *a, int *b)
 //{
@@ -32,25 +32,25 @@
 //}
 
 
-int main()
-{
-    char a[5];
-    char *ptr;
-    
-    a[0]= 'a';
-    a[1]= 'b';
-    a[2]= 'c';
-    a[3]= 'd';
-    a[4]= 'e';
-    
-    ptr = a;
-    printf("%c \n", *ptr); // 포인터 변수 ptr에 a 배열의 주소값을 가르키고 있어 a값을 대입
-    
-    ptr = ptr + 3;
-    printf("%c \n", *ptr); // ptr은 a배열의 주소값을 가르키고 있어 a배열의 값인 a에 3을 더한 3번째 d을 출력한다
-    
-    return 0;
-}
+//int main()
+//{
+//    char a[5];
+//    char *ptr;
+//    
+//    a[0]= 'a';
+//    a[1]= 'b';
+//    a[2]= 'c';
+//    a[3]= 'd';
+//    a[4]= 'e';
+//    
+//    ptr = a;
+//    printf("%c \n", *ptr); // 포인터 변수 ptr에 a 배열의 주소값을 가르키고 있어 a값을 대입
+//    
+//    ptr = ptr + 3;
+//    printf("%c \n", *ptr); // ptr은 a배열의 주소값을 가르키고 있어 a배열의 값인 a에 3을 더한 3번째 d을 출력한다
+//    
+//    return 0;
+//}
 
 
 
