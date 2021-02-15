@@ -88,7 +88,26 @@
 //}
 
 
-int main (void) // 2의 배수 구구단
+//int main (void) // 2의 배수 구구단
+//{
+//    int x, y;
+//
+//    for(x=2;x<10;x++)
+//    {
+//        for(y=1;y<10;y++)
+//        {
+//            if (x%2==0) {
+//                printf("%d X %d = %d \n", x,y,x*y);
+//            }
+//        }
+//        if(x%2==0)
+//        {
+//            printf("%d단 종료 \n\n",x);
+//        }
+//    }
+//}
+
+int main (void) // 홀수 구구단
 {
     int x, y;
     
@@ -96,11 +115,11 @@ int main (void) // 2의 배수 구구단
     {
         for(y=1;y<10;y++)
         {
-            if (x%2==0) {
+            if (x%2==1) {
                 printf("%d X %d = %d \n", x,y,x*y);
             }
         }
-        if(x%2==0)
+        if(x%2==1)
         {
             printf("%d단 종료 \n\n",x);
         }
