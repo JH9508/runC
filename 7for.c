@@ -4,7 +4,7 @@
 //
 //  Created by 김지훈 on 2021/02/15.
 //
-#include <stdio.h>
+//#include <stdio.h>
 //int main(void)
 //{
 //    int num;
@@ -106,22 +106,22 @@
 //        }
 //    }
 //}
-
-int main (void) // 홀수 구구단
-{
-    int x, y;
-    
-    for(x=2;x<10;x++)
-    {
-        for(y=1;y<10;y++)
-        {
-            if (x%2==1) {
-                printf("%d X %d = %d \n", x,y,x*y);
-            }
-        }
-        if(x%2==1)
-        {
-            printf("%d단 종료 \n\n",x);
-        }
-    }
-}
+//
+//int main (void) // 홀수 구구단
+//{
+//    int x, y;
+//
+//    for(x=2;x<10;x++)
+//    {
+//        for(y=1;y<10;y++)
+//        {
+//            if (x%2==1) {
+//                printf("%d X %d = %d \n", x,y,x*y);
+//            }
+//        }
+//        if(x%2==1)
+//        {
+//            printf("%d단 종료 \n\n",x);
+//        }
+//    }
+//}
