@@ -73,7 +73,22 @@
 //    return 0;
 //}
 
-int main (void) // 구구단 함수
+//int main (void) // 구구단 함수
+//{
+//    int x, y;
+//
+//    for(x=2;x<10;x++)
+//    {
+//        for(y=1;y<10;y++)
+//        {
+//            printf("%d X %d = %d \n", x,y,x*y);
+//        }
+//        printf("%d단 종료 \n\n",x);
+//    }
+//}
+
+
+int main (void) // 2의 배수 구구단
 {
     int x, y;
     
@@ -81,8 +96,13 @@ int main (void) // 구구단 함수
     {
         for(y=1;y<10;y++)
         {
-            printf("%d X %d = %d \n", x,y,x*y);
+            if (x%2==0) {
+                printf("%d X %d = %d \n", x,y,x*y);
+            }
         }
-        printf("%d단 종료 \n\n",x);
+        if(x%2==0)
+        {
+            printf("%d단 종료 \n\n",x);
+        }
     }
 }
