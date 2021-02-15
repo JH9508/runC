@@ -72,3 +72,17 @@
 //
 //    return 0;
 //}
+
+int main (void) // 구구단 함수
+{
+    int x, y;
+    
+    for(x=2;x<10;x++)
+    {
+        for(y=1;y<10;y++)
+        {
+            printf("%d X %d = %d \n", x,y,x*y);
+        }
+        printf("%d단 종료 \n\n",x);
+    }
+}
